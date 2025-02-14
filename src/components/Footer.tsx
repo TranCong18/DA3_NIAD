@@ -32,19 +32,19 @@ export default function Footer() {
           <div className="flex justify-end space-x-4 mt-2">
             <a href="#" className="hover:text-yellow-300">
               <img
-                src="/icons/facebook.svg"
+                src="/icons/facebook.png"
                 alt="Facebook"
                 className="w-6 h-6"
               />
             </a>
             <a href="#" className="hover:text-yellow-300">
-              <img src="/icons/youtube.svg" alt="YouTube" className="w-6 h-6" />
+              <img src="/icons/youtube.png" alt="YouTube" className="w-6 h-6" />
             </a>
             <a href="#" className="hover:text-yellow-300">
-              <img src="/icons/zalo.svg" alt="Zalo" className="w-6 h-6" />
+              <img src="/icons/zalo.png" alt="Zalo" className="w-6 h-6" />
             </a>
             <a href="#" className="hover:text-yellow-300">
-              <img src="/icons/wechat.svg" alt="WeChat" className="w-6 h-6" />
+              <img src="/icons/wechat.png" alt="WeChat" className="w-6 h-6" />
             </a>
           </div>
         </div>
