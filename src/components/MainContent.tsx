@@ -80,7 +80,7 @@ const awards = [
 ];
 
 export default function MainContent() {
-  const [hovered, setHovered] = useState<number | null>(null);
+  // const [hovered, setHovered] = useState<number | null>(null);
 
   return (
     <div className="p-8">
@@ -142,8 +142,8 @@ export default function MainContent() {
           <div
             key={index}
             className="relative group cursor-pointer"
-            onMouseEnter={() => setHovered(index)}
-            onMouseLeave={() => setHovered(null)}
+            // onMouseEnter={() => setHovered(index)}
+            // onMouseLeave={() => setHovered(null)}
           >
             <img
               src={item.image}

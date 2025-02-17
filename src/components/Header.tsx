@@ -57,17 +57,25 @@ export default function Header() {
       {/* Search & Language */}
       <div className="flex items-center space-x-4">
         <button>
-          <img
+          <Image
+            width={300}
+            height={300}
             src="/icons/search.png"
             alt="Search"
-            className={`h-5 transition-all duration-300 ${
+            className={`w-auto h-auto  transition-all duration-300 ${
               scrolled ? "opacity-75" : "opacity-100"
             }`}
           />
         </button>
         <button className="flex items-center space-x-1">
           <span>EN</span>
-          <img src="/icons/globe.png" alt="Language" className="h-5" />
+          <Image
+            width={300}
+            height={300}
+            src="/icons/globe.png"
+            alt="Language"
+            className="w-auto h-auto"
+          />
         </button>
       </div>
     </header>

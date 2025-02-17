@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
-
+import Image from "next/image";
 const slides = [
   "/images/banner1.jpg",
   "/images/banner2.jpg",
@@ -22,7 +22,9 @@ export default function HeroSection() {
       >
         {slides.map((src, index) => (
           <SwiperSlide key={index}>
-            <img
+            <Image
+              width={300}
+              height={300}
               src={src}
               alt={`Slide ${index + 1}`}
               className="w-full h-full object-cover"
