@@ -13,7 +13,7 @@ const slides = [
 
 export default function HeroSection() {
   return (
-    <div className="relative w-full h-[400px]">
+    <div className="relative w-full h-full">
       <Swiper
         modules={[Autoplay, Pagination]}
         autoplay={{ delay: 5000 }}

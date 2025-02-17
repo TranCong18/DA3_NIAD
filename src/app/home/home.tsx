@@ -1,14 +1,14 @@
 import Header from "@/components/Header";
-import Navbar from "@/components/Navbar";
-import Sidebar from "@/components/Sidebar";
+// import Navbar from "@/components/Navbar";
+// import Sidebar from "@/components/Sidebar";
 
 const Home = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="flex flex-grow p-4">
-        <Sidebar />
+        {/* <Sidebar /> */}
         <main className="flex-1 text-center">
           <h1 className="text-3xl font-bold text-teal-700">
             ỨNG DỤNG TRÍ TUỆ NHÂN TẠO (AI) TRONG Y TẾ
@@ -26,7 +26,7 @@ const Home = () => {
             </button>
           </div>
         </main>
-        <Sidebar />
+        {/* <Sidebar /> */}
       </div>
     </div>
   );
