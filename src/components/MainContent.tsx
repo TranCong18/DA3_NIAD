@@ -1,6 +1,6 @@
 "use client";
-import { useState } from "react";
-
+// import { useState } from "react";
+import Image from "next/image";
 const news = [
   {
     date: "24.01.2025",
@@ -96,7 +96,9 @@ export default function MainContent() {
           </h3>
           {news.map((item, index) => (
             <div key={index} className="flex items-center gap-4 mb-4">
-              <img
+              <Image
+                width={300}
+                height={300}
                 src={item.image}
                 alt={item.title}
                 className="w-20 h-20 object-cover"
@@ -145,7 +147,9 @@ export default function MainContent() {
             // onMouseEnter={() => setHovered(index)}
             // onMouseLeave={() => setHovered(null)}
           >
-            <img
+            <Image
+              width={300}
+              height={300}
               src={item.image}
               alt={item.title}
               className="w-full h-60 object-cover rounded"
@@ -166,7 +170,13 @@ export default function MainContent() {
       <div className="grid grid-cols-3 gap-8 mt-12 text-center">
         {links.map((link, index) => (
           <div key={index} className="flex flex-col items-center">
-            <img src={link.icon} alt={link.title} className="w-20 h-20 mb-2" />
+            <Image
+              width={300}
+              height={300}
+              src={link.icon}
+              alt={link.title}
+              className="w-20 h-20 mb-2"
+            />
             <p className="text-lg font-semibold">{link.title}</p>
           </div>
         ))}
@@ -193,7 +203,14 @@ export default function MainContent() {
       </h3>
       <div className="flex justify-center gap-6">
         {awards.map((award, index) => (
-          <img key={index} src={award} alt="Award" className="h-16" />
+          <Image
+            width={300}
+            height={300}
+            key={index}
+            src={award}
+            alt="Award"
+            className="h-16"
+          />
         ))}
       </div>
     </div>

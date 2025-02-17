@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-teal-800 text-white py-6">
@@ -31,20 +32,40 @@ export default function Footer() {
           </p>
           <div className="flex justify-end space-x-4 mt-2">
             <a href="#" className="hover:text-yellow-300">
-              <img
+              <Image
+                width={300}
+                height={300}
                 src="/icons/facebook.png"
                 alt="Facebook"
                 className="w-6 h-6"
               />
             </a>
             <a href="#" className="hover:text-yellow-300">
-              <img src="/icons/youtube.png" alt="YouTube" className="w-6 h-6" />
+              <Image
+                width={300}
+                height={300}
+                src="/icons/youtube.png"
+                alt="YouTube"
+                className="w-6 h-6"
+              />
             </a>
             <a href="#" className="hover:text-yellow-300">
-              <img src="/icons/zalo.png" alt="Zalo" className="w-6 h-6" />
+              <Image
+                width={300}
+                height={300}
+                src="/icons/zalo.png"
+                alt="Zalo"
+                className="w-6 h-6"
+              />
             </a>
             <a href="#" className="hover:text-yellow-300">
-              <img src="/icons/wechat.png" alt="WeChat" className="w-6 h-6" />
+              <Image
+                width={300}
+                height={300}
+                src="/icons/wechat.png"
+                alt="WeChat"
+                className="w-6 h-6"
+              />
             </a>
           </div>
         </div>
