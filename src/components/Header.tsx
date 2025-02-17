@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-
+import Image from "next/image";
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -24,10 +24,14 @@ export default function Header() {
     >
       {/* Logo */}
       <div className="flex items-center">
-        <img
+        <Image
+          width={300}
+          height={300}
           src="/images/logo.jpg"
           alt="BIC Logo"
-          className={`transition-all duration-300 ${scrolled ? "h-8" : "h-12"}`}
+          className={`w-auto h-auto transition-all duration-300 ${
+            scrolled ? "h-8" : "h-12"
+          }`}
         />
       </div>
 
