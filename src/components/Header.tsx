@@ -62,7 +62,7 @@ export default function Header() {
             height={300}
             src="/icons/search.png"
             alt="Search"
-            className={`w-auto h-auto  transition-all duration-300 ${
+            className={`w-20 h-20  transition-all duration-300 ${
               scrolled ? "opacity-75" : "opacity-100"
             }`}
           />
@@ -74,7 +74,7 @@ export default function Header() {
             height={300}
             src="/icons/globe.png"
             alt="Language"
-            className="w-auto h-auto"
+            className="w-20 h-20"
           />
         </button>
       </div>
