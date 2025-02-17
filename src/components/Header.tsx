@@ -58,8 +58,8 @@ export default function Header() {
       <div className="flex items-center space-x-4">
         <button>
           <Image
-            width={300}
-            height={300}
+            width={20}
+            height={20}
             src="/icons/search.png"
             alt="Search"
             className={`w-20 h-20  transition-all duration-300 ${
@@ -70,8 +70,8 @@ export default function Header() {
         <button className="flex items-center space-x-1">
           <span>EN</span>
           <Image
-            width={300}
-            height={300}
+            width={20}
+            height={20}
             src="/icons/globe.png"
             alt="Language"
             className="w-20 h-20"
